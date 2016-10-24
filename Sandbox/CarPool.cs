@@ -7,7 +7,7 @@ namespace Sandbox
 {
     class CarPool
     {
-        // This instance field will contain license pates as keys,
+        // This instance field will contain license plates as keys,
         // and Car objects as values
         Dictionary<String, Car> carList;
 
