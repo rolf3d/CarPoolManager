@@ -1,6 +1,6 @@
 # CarPoolManager
 
-<H1>Clone the C# project CarPoolManager</H1>
+Clone the C# project CarPoolManager
 
 This exercise is about completing the definition of a class that uses a Dictionary object  The project contains the class Car. 
 This is a very simple representation of a car, with only three instance fields; license plate, brand and model. This class does not need to be changed!  The project also contains the class CarPool. This class is supposed to represent a pool of cars; for this purpose, an instance field carList of type Dictionary is used to hold Key-Value pairs consisting of license plates and Car objects (since a car is uniquely identified by its license plate)   
