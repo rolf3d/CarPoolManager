@@ -19,6 +19,7 @@ namespace Sandbox
         // Add the given car to the car pool
         public void AddCarToPool(Car aCar)
         {
+            carList.Add(aCar.GetLicensePlate(), aCar);
             // Complete this method
         }
 
@@ -26,15 +27,28 @@ namespace Sandbox
         // If the license plate does not exist, do nothing
         public void RemoveCarFromPool(String licensePlate)
         {
+            carList.Remove(licensePlate);
+            
+            
             // Complete this method
+            
+            
         }
 
         // If a Car object corresponding to the given license plate exists, return it.
         // Otherwise, return null
         public Car LookupCar(String licensePlate)
         {
+            
+            if (carList.ContainsKey(licensePlate))
+            {
+                return carList[licensePlate];
+            }
+            else
+            {
+                return null;
+            }
             // Complete this method
-            return null;
         }
 
         // Print out all cars in the pool
