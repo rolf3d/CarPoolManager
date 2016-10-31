@@ -19,7 +19,10 @@ namespace Sandbox
         // Add the given car to the car pool
         public void AddCarToPool(Car aCar)
         {
+            
+            
             carList.Add(aCar.GetLicensePlate(), aCar);
+            
             // Complete this method
         }
 
@@ -59,6 +62,12 @@ namespace Sandbox
             {
                 Car aCar = kvp.Value;
                 Console.WriteLine("{0} is a {1} {2}", aCar.GetLicensePlate(), aCar.GetBrand(), aCar.GetModel());
+            }
+
+            foreach (KeyValuePair<string, Car> bil in carList)
+            {
+                Car bilen = bil.Value;
+                Console.WriteLine("Biler i systemet er: {0}, og andre værdier fra bilen er: {1}", bilen.GetLicensePlate(), bilen.GetBrand());
             }
         }
     }
